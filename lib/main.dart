@@ -1,20 +1,27 @@
+import 'dart:developer';
 import 'dart:io';
 
 void main() {
-  String name, collague;
-  int age;
-  double salary;
-  bool success;
-  print("Entre Your Name");
+  String name, contry;
+  int departement;
+  double age;
+  print('entre your name ');
   name = stdin.readLineSync()!;
-  print("Entre your age");
-  age = int.parse(stdin.readLineSync()!);
-  print("Entre your Salary : ");
-  salary = double.parse(stdin.readLineSync()!);
-  print("Entre your collague : ");
-  collague = stdin.readLineSync()!;
-  print("success or not ");
-  success = bool.parse(stdin.readLineSync()!);
-  print(
-      "Hello $name Your age Is $age and your collegue is $collague and your sallary is $salary success is = $success");
+  print("Entre your age :");
+  age = double.parse(stdin.readLineSync()!);
+  print("entre your Country");
+  contry = stdin.readLineSync()!;
+
+  print("Select your Section (\n1 Soft \n2- Bio \n3- General)");
+  departement = int.parse(stdin.readLineSync()!);
+
+  if (departement == 1) {
+    print(departement);
+  } else if (departement == 2) {
+    print(departement);
+  } else if (departement == 3) {
+    print(departement);
+  } else {
+    print("walooo");
+  }
 }
